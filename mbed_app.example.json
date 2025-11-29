@@ -1,0 +1,26 @@
+D{
+    "config": {
+        "wifi-ssid": {
+            "help": "WiFi SSID",
+            "value": "\"YOUR_SSID_HERE\""
+        },
+        "wifi-password": {
+            "help": "WiFi Password",
+            "value": "\"YOUR_PASSWORD_HERE\""
+        },
+        "esp-rx-pin": {
+            "help": "ESP8266 module Tx pin, Mc Rx PB_7 or PA_10",
+            "value": "PA_10"
+        },
+        "esp-tx-pin": {
+            "help": "ESP8266 module Rx pin, Mc Tx PB_6 or PA_9",
+            "value": "PA_9"
+        }
+    },
+    "target_overrides": {
+        "*": {
+            "platform.stdio-convert-newlines": true,
+            "esp8266.provide-default" : false
+        }
+    }
+}
