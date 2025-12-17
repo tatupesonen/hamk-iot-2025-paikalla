@@ -11,3 +11,4 @@ compile_commands.json
 .cache
 RC522/.hg
 mbed-mqtt
+RC522
